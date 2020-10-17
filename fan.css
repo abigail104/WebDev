@@ -1,0 +1,26 @@
+p {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
